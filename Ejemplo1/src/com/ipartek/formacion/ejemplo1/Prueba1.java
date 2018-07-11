@@ -18,6 +18,7 @@ public class Prueba1 {
 		Punto p3 = (Punto) p.clone();
 		
 		System.out.println(p3);
+		
 	}
 
 }
