@@ -16,6 +16,7 @@ public class Punto {
 	public Punto() {
 		this(DEFAULT_X, DEFAULT_Y); //x = 1; y = 1;
 	}
+	
 
 	@Override
 	public String toString() {
