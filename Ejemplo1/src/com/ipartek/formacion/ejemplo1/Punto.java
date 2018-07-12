@@ -13,7 +13,6 @@ public class Punto {
 		setY(y);
 	}
 	
-	
 	public Punto() {
 		this(DEFAULT_X, DEFAULT_Y); //x = 1; y = 1;
 	}
