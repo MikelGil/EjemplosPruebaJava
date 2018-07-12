@@ -2,16 +2,19 @@ package com.ipartek.formacion.ejemplo1;
 
 public class Punto {
 
+	public static final int DEFAULT_X = 1;
+	public static final int DEFAULT_Y = 1;
+	public static final int MAX_X = 1000;
+	
 	private int x, y;
 
 	public Punto(int x, int y) {
-		super();
-		this.x = x;
-		this.y = y;
+		setX(x);
+		setY(y);
 	}
 	
 	public Punto() {
-		this(1, 1); //x = 1; y = 1;
+		this(DEFAULT_X, DEFAULT_Y); //x = 1; y = 1;
 	}
 
 	@Override
@@ -24,6 +27,8 @@ public class Punto {
 	}
 
 	public void setX(int x) {
+		if (x > MAX_X) 
+			throw new RuntimeException("Maximo de puntos = " + MAX_X);
 		this.x = x;
 	}
 
