@@ -12,7 +12,7 @@ public class Prueba1 {
 		tablero[0][0] = 'T';
 		tablero[0][1] = 'C';
 		tablero[0] = new char[]{'T','C','A','R','r','A','C','T'};
-		tablero[7] = tablero[0];
+		tablero[7] = tablero[0].clone();
 		
 		for (int fila = 1; fila <= 6; fila += 5) {
 			for (int columna = 0; columna < 8; columna++) {
