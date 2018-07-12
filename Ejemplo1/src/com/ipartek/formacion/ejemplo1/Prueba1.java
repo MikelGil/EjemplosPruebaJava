@@ -8,6 +8,26 @@ public class Prueba1 {
 		arr[0] = 5;
 		arr[1] = 2;
 		
+		char[][] tablero = new char[8][8];
+		tablero[0][0] = 'T';
+		tablero[0][1] = 'C';
+		tablero[0] = new char[]{'T','C','A','R','r','A','C','T'};
+		tablero[7] = tablero[0];
+		
+		for (int fila = 1; fila <= 6; fila += 5) {
+			for (int columna = 0; columna < 8; columna++) {
+				tablero[fila][columna] = 'p';
+			}
+		}
+		
+		for (int fila = 0; fila < 8; fila++) {
+			for (int columna = 0; columna < 8; columna++) {
+				System.out.print(tablero[fila][columna]);
+			}
+			System.out.println();
+		}
+		
+		
 		int[] arr2 = {5,2};
 		
 		System.out.println(arr2[0]);
